@@ -1,9 +1,8 @@
 const pokemonDisplay = (pokeInfo) => {
-  console.log(pokeInfo);
   var output = "";
   pokeInfo.forEach((pokemon) => {
     output += `
-    <div class="content--card"
+    <div id="card" class="content--card"
       <li>
         <h4>${pokemon.id} - ${pokemon.name.toUpperCase()}</h4>
         <img loading="lazy" src="${pokemon.image}" alt="${pokemon.name}">

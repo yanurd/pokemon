@@ -18,6 +18,5 @@ const pokemonFullData = (pokemon) => {
     types: data.types.map(type => type.type.name).join(", "),
     moves: data.moves.map(moves => moves.move.name),
   }));
-  console.log(selectedPokemon)
   fullDataDisplay(selectedPokemon);
 };

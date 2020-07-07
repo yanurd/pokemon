@@ -42,12 +42,10 @@ const fullDataDisplay = (pokemon) => {
         <img src="${p.fbshiny}" alt="${p.name}">
       `;
     }
-    document.getElementById("content--info").innerHTML = `
-      <h4>${p.id}- ${p.name.toUpperCase()}</h4>
-    `;
     document.getElementById("content--general").innerHTML = `
+    <h4>${p.id}- ${p.name.toUpperCase()}</h4>
       <p>Height: ${p.height} m | ${(p.height * 3.28084).toFixed(2)} ft</p>
-      <p>Weight: ${p.weight} hg | ${p.weight * (0.1).toFixed(1)} kg | ${
+      <p>Weight: ${p.weight} hg | ${(p.weight*0.1).toFixed(1)} kg | ${
       p.weight * (0.220462).toFixed(2)
     } lb </p>
       <p>Type: ${p.types}</p>

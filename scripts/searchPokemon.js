@@ -1,22 +1,8 @@
 var pokemon = [];
 const API = "https://pokeapi.co/api/v2/pokemon/";
-// const searchPokemon = (async () => {
-//   for (let i = 1; i < 20; i++) {
-
-//     const pokemones = await axios.get(API+i)
-//     .then(function (response){
-//       const pokemones = response.data
-//       pokemon.push(pokemones)
-//       console.log(pokemon[i-1])
-//       pokemonCard();
-//     })
-//     .catch(function (error){
-//       console.log(error)
-//     })
-//   }
-// })()
+const maxPokemon = 100
 const searchPokemon = () => {
-  for (let i = 1; i < 20; i++) {
+  for (let i = 1; i < maxPokemon; i++) {
     axios
       .get(API + i)
       .then(function (response) {
