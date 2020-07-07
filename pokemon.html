@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POKEMON</title>
+  </head>
+  <body onload="selectedPokemon()">
+    <div id="content" class="content">
+      <div class="content--normal">
+        <div class="content--front">
+          <div id="content--front__male" class="content--front__male"></div>
+          <div id="content--front__female" class="content--front__female"></div>
+        </div>
+        <div class="content--back">
+          <div id="content--back__male" class="content--back__male"></div>
+          <div id="content--back__female" class="content--back__female"></div>
+        </div>
+        <div id="content--info"></div>
+      </div>
+      <div class="content--shiny">
+        <div id="content--front__shiny">
+          <div id="content--front__mshiny"></div>
+          <div id="content--front__fshiny"></div>
+        </div>
+        <div id="content--back__shiny">
+          <div id="content--back__mshiny"></div>
+          <div id="content--back__fshiny"></div>
+        </div>
+      </div>
+      <div id="content--general"></div>
+      <div class="content--table">
+        <table>
+
+          <thead>
+            <tr>
+              <th> # </th>
+              <th> Move </th>
+            </tr>
+          </thead>
+      
+          <tbody id="_tbody">
+      
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./scripts/libraries/axios.min.js"></script>
+    <script src="./scripts/pokemonFullData.js"></script>
+    <script src="./scripts/fullDataDisplay.js"></script>
+    <script src="./scripts/selectedPokemon.js"></script>
+  </body>
+</html>
