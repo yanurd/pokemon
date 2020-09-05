@@ -2,7 +2,7 @@ var pokemon = [];
 const API = "https://pokeapi.co/api/v2/pokemon/";
 const maxPokemon = 100
 async function searchPokemon() {
-  for (let i = 1; i < maxPokemon; i++) {
+  for (let i = 1; i <= maxPokemon; i++) {
    await axios
       .get(API + i)
       .then(function (response) {
